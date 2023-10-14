@@ -21,8 +21,8 @@ public class Jugador extends Futbolista implements Comparable{
     }
 
     @Override
-    public int compareTo(Object o){
-        return Math.abs(this.golesMarcados - ((Jugador) o).golesMarcados);
+    public int compareTo(Object f) {
+        return Math.abs(((Jugador) f).getEdad() - this.getEdad());
     }
 
     public boolean jugarConLasManos() {
